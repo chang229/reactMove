@@ -35,12 +35,17 @@ img {
 body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	margin: 0;
 	padding: 0;
-	border: none;
+    border: none;
 }
 body {
 	font: 12px/1.5 'Microsoft YaHei','宋体', Tahoma, Arial, sans-serif;
 	color: #555;
 	background: #fff;
+}
+body,html{
+	min-width:320px;
+	max-width:640px;
+	margin:0 auto;
 }
 em, i {
 	font-style: normal;
@@ -72,7 +77,8 @@ ul, ol {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
-	font-family: Microsoft YaHei;
+    font-family: Microsoft YaHei;
+    font-weight:normal;
 }
 img {
 	border: none;
