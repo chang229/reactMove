@@ -3,7 +3,13 @@
     min-width: 320px;
     margin:0 auto;
 }
+.indexBox{
+    padding-top:55px;
+}
 .bannerBox{
+    height:250px;
+}
+.bannerBox ul{
     height:250px;
 }
 .listHeader{
@@ -21,11 +27,38 @@
     width:auto;
     display:flex;
 }
+.moveList::-webkit-scrollbar {
+    display: none;
+}
 .moveList li{
     flex:1;
     margin: 0 5px;
+    text-align:center;
+    font-size:16px;
+}
+.moveList li p{
+    color:#111;
 }
 .moveList img{
     width:100px;
     height:150px;
+}
+.ringStar{
+    color:#aaa;
+}
+.ringStar span{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background-size:10px 10px;
+}
+.ringStar span.king{
+    background-image:url(../../imgs/king.png);
+}
+.ringStar span.kong{
+    background-image:url(../../imgs/kong.png);
+}
+.ringStar span.average{
+    font-size:12px;
+    color:#aaa;
 }

@@ -11,10 +11,10 @@ input[type="submit"], input[type="reset"], input[type="button"], input {
 	-webkit-appearance: none;
 	resize: none;
 }
-
 /* 取消链接高亮  */
 body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    touch-action: pan-x;
 }
 
 /* 设置HTML5元素为块 */
@@ -65,7 +65,6 @@ strong {
 }
 a {
 	text-decoration: none;
-	color: #969696;
 	font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
 }
 a:hover {
@@ -87,6 +86,6 @@ img {
 	overflow : hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }

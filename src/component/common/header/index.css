@@ -1,6 +1,17 @@
+.fixHead{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+}
 .header{
-    height:47px;
     padding:0 18px;
+    min-width: 284px;
+    max-width: 604px;
+    height:47px;
+    margin:0 auto;
+    background:#fff;
     line-height:47px;
     font-size:20px;
     color:#42bd56;
@@ -8,5 +19,4 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 2px rgba(0,0,0,0.08);
-    margin-bottom:10px;
 }

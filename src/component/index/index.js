@@ -7,7 +7,7 @@ import { _get } from '../../config/axios';
 
 class Banner extends Component {
     state = {
-        data: [],
+        data: [1,2,3],
         imgHeight: 250
     };
     componentDidMount() {
@@ -55,7 +55,7 @@ class Banner extends Component {
 class Index extends Component{
     render(){
         return (
-            <div>
+            <div className="indexBox">
                 <Header />
                 <Banner />
                 <List head="影院热映" url="/movie/new_movies" />

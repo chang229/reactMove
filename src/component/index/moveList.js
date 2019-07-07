@@ -25,6 +25,22 @@ class List extends Component{
             })
         })
     };
+    source(val){
+        if(val){
+            return (
+                <div>
+                    <span className={val > 0 ? 'king' : 'kong'}></span>
+                    <span className={val > 2 ? 'king' : 'kong'}></span>
+                    <span className={val > 4 ? 'king' : 'kong'}></span>
+                    <span className={val > 6 ? 'king' : 'kong'}></span>
+                    <span className={val > 8 ? 'king' : 'kong'}></span>
+                    <span className="average">{val}</span>
+                </div>
+            )
+        }else{
+            return '暂无评分'
+        }
+    }
     render(){
         return (
             <div>
@@ -34,6 +50,10 @@ class List extends Component{
                         <li key={i}>
                             <a href="javascript:;">
                                 <img src={val.images.large} />
+                                <p>{val.title.length > 5 ? val.title.substring(0,5) + '...' : val.title}</p>
+                                <div className="ringStar">
+                                    {this.source(val.rating.average)}
+                                </div>
                             </a>
                         </li>
                     ))}
