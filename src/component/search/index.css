@@ -1,0 +1,18 @@
+.searchBox{
+    background:#fff;
+    padding:15px 18px;
+    display:flex;
+    align-items: center;
+    border-bottom:1px solid #f3f3f3;
+}
+.searchBack{
+    flex:1;
+    text-align:center;
+}
+.searchBack a{
+    color:#42bd56;
+    font-size:16px;
+}
+.searchIpt{
+    flex:3;
+}
